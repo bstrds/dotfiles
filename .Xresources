@@ -1,0 +1,113 @@
+! font settings --------------------------------------------------------------
+
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+!Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+XTerm*font:	 -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.font:	 -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+URxvt.bold.font: -xos4-terminus-bold-r-normal-12-120-72-72-c-60-iso10646-1
+
+! cursor
+Xcursor.theme: oxy
+
+! URxvt Settings
+URxvt.title:rxvt-unicode
+URxvt.termName:rxvt-unicode
+URxvt.iconFile:/usr/share/icons/scalable/apps/terminal.svg
+URxvt.visualBell:false
+URxvt.urgentOnBell:true
+URxvt.highlightSelection:True
+URxvt.geometry:98x28
+URxvt.borderless:false
+URxvt.externalBorder:1
+URxvt.internalBorder:0
+
+URxvt.perl-ext-common:default,matcher,selection,-readline,-selection-popup,-option-popup,-option-popup,-tabbed,-searchable-scrollback
+URxvt.cutchars:"()*,<>[]{}|'"
+URxvt.matcher.button:1
+
+! urxvt-perls
+URxvt.perl-ext: clipboard,url-select,keyboard-select
+! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.autocopy: true
+URxvt.url-select.button: 1
+!URxvt.url-select.launcher: firefox
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.url-select.underline: true
+URxvt.colorUL: #4682B4
+! keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+URxvt.eightBitInput:true
+URxvt.inputMethod:SCIM
+URxvt.multichar_encoding:utf-8
+URxvt.preeditType:OverTheSpot,Root
+URxvt.imLocale:en_US.UTF-8
+modifier:meta
+!alt, meta, hyper, super, mod1..5
+
+URxvt.buffered:true
+URxvt.saveLines:1000
+URxvt.scrollstyle:plain
+URxvt.jumpScroll:true
+URxvt.skipScroll:false
+URxvt.scrollBar:false
+URxvt.scrollTtyOutput:false
+URxvt.scrollWithBuffer:true
+URxvt.scrollTtyKeypress:true
+URxvt.mouseWheelScrollPage:false
+
+URxvt.iso14755:false
+URxvt.iso14755_52:false
+
+! URxvt Color Settings
+#include "/home/bstrds/.cookiecols"
+
+URxvt.depth:16
+URxvt.dynamicColors:on
+URxvt.transparent:false
+
+URxvt.cursorColor:#888888
+URxvt.cursorBlink:true
+URxvt.cursorUnderline:false
+URxvt.pointerColor:gray
+URxvt.pointerColorBackground:black
+URxvt.pointerBlank:false
+URxvt.pointerBlankDelay:2
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
